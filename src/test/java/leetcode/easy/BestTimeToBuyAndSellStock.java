@@ -5,9 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * BestTimeToBuyAndSellStock
- * author: sinuki
- * createdAt: 2020/01/15
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  **/
 public class BestTimeToBuyAndSellStock {
 
