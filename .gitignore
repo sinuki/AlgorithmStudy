@@ -2,3 +2,9 @@
 /.gradle/
 .git
 .idea
+
+# eclipse
+.classpath
+.project
+/.settings/
+/bin/
