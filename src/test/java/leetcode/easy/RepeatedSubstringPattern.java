@@ -13,11 +13,15 @@ import static org.junit.Assert.assertTrue;
 public class RepeatedSubstringPattern {
 
     public boolean repeatedSubstringPattern(String s) {
+        int length = s.length();
         int patternLength = s.length() / 2;
         while (0 < patternLength) {
+            if (0 != length % patternLength) {
+                patternLength--;
+                continue;
+            }
             HashSet<String> set = new HashSet<>();
-            for (int i = 0, length = s.length(); i < length; i += patternLength) {
-                if (0 == i && length % patternLength != 0) break;
+            for (int i = 0; i < length; i += patternLength) {
                 set.add(s.substring(i, Math.min(i + patternLength, length)));
                 if (1 < set.size()) break;
             }
