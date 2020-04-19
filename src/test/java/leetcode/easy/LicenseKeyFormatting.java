@@ -20,10 +20,10 @@ public class LicenseKeyFormatting {
                 sb.append(dash);
                 checker = 0;
             }
-            sb.append(c);
+            sb.append(Character.toUpperCase(c));
             checker++;
         }
-        return sb.reverse().toString().toUpperCase();
+        return sb.reverse().toString();
     }
 
     // 처음에 풀었던 방법. 많은 예외 처리가 필요하고 코드가 복잡하다.
